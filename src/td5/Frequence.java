@@ -4,20 +4,19 @@
  * and open the template in the editor.
  */
 package td5;
-import java.util.ArrayList;
 
 /**
  *
  * @author zhanghuakai
  */
-public class Processus {
-    private Integer seuil;
-    private ArrayList<Node> node;
+public class Frequence {
+    private Integer nb;
     
-    
-    public Processus(){
-        node=new ArrayList<>();
+    public Frequence (Integer i){
+        nb=i;
     }
     
-    
+    public Integer get_nb(){
+        return nb;
+    }
 }

@@ -9,6 +9,6 @@ package td5;
  *
  * @author zhanghuakai
  */
-public class Tahce {
-    
+public class Node {
+    private Tache tache;
 }

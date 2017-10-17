@@ -4,20 +4,20 @@
  * and open the template in the editor.
  */
 package td5;
-import java.util.ArrayList;
 
 /**
  *
  * @author zhanghuakai
  */
-public class Processus {
-    private Integer seuil;
-    private ArrayList<Node> node;
+public class Tache {
+    private String libelle;
     
-    
-    public Processus(){
-        node=new ArrayList<>();
+    public Tache(String s){
+        libelle=s;
     }
     
+    public String get_libelle(){
+        return libelle;
+    }
     
 }
