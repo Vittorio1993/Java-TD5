@@ -16,7 +16,7 @@ import td5.Tache;
  */
 public class Run {
     public static void main(String args[]){
-        Tache t1=new Tache("A");
+        /*Tache t1=new Tache("A");
         Tache t2=new Tache("B");
         Tache t3=new Tache("C");
         
@@ -33,7 +33,7 @@ public class Run {
         Ligne l5=new Ligne(t3,t1,f5);
         Ligne l6=new Ligne(t3,t2,f4);
         
-        Table tab1=new Table();
+        
         tab1.set_table(l1);
         tab1.set_table(l2);
         tab1.set_table(l3);
@@ -41,7 +41,12 @@ public class Run {
         tab1.set_table(l5);
         tab1.set_table(l6);
         
-        tab1.afficher();
+        tab1.afficher();*/
+        Table tab1=new Table();
+        tab1.readeCsv();
+        Tache first_tache=new Tache("");
+        first_tache=tab1.first_tache();
+        tab1.next_tache(first_tache);
         
         
         
