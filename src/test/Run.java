@@ -44,6 +44,7 @@ public class Run {
         tab1.afficher();*/
         Table tab1=new Table();
         tab1.readeCsv();
+        tab1.set_lsttache();
         Tache first_tache=new Tache("");
         first_tache=tab1.first_tache();
         tab1.next_tache(first_tache);

@@ -24,7 +24,7 @@ import java.nio.charset.Charset;
 public class Table {
    // private ArrayList<Ligne> lstligne=new ArrayList<>();;
     ArrayList<String[]> csvList = new ArrayList<>();// pour stocker les données de csv
-    
+    ArrayList<String> lsttache = new ArrayList<>();
     public Table(){
        
     }
@@ -43,6 +43,22 @@ public class Table {
         }
        return t; 
     }*/
+     public void set_lsttache(){
+         
+         for(int row=0;row<csvList.size();row++){
+             String[] aa=csvList.get(row)[0].split(";");
+             for(int i=0; i<csvList.size(); i++){ 
+             if(!lsttache.contains(aa[0])){
+                 lsttache.add(aa[0]);
+             }
+         }
+         for(int i=0;i<lsttache.size();i++){
+             System.out.println(lsttache.get(i));
+             
+         }
+         }        
+              
+     }
      
      public Tache first_tache(){
         Tache t =new Tache("");
